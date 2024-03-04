@@ -2,7 +2,7 @@ import bcrypt from "bcryptjs";
 import User from "../models/user.model.js";
 import generateTokenAndSetCookie from "../utils/generateToken.js";
 import { handleError } from "../utils/errorHandler.js";
-import { JWT_COOKIE_OPTIONS } from "../config/constants.js"; // Assuming you have a constants file
+import { JWT_COOKIE_OPTIONS } from "../config/constants.js";
 
 export const signup = async (req, res) => {
   try {
